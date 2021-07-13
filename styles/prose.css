@@ -1,0 +1,141 @@
+/* code syntax highlighting */
+/* dark is default: */
+pre {
+  --base00: #011627; /* editor background */
+  --base01: #2d2d2d; /* unused (currently) */
+  --base02: #424242; /* unused (currently) */
+  --base03: #637777; /* code comments */
+  --base04: #555555; /* unused (currently) */
+  --base05: #d6deeb; /* fallback font color */
+  --base06: #c8c8c8; /* unused (currently) */
+  --base07: #fafafa; /* unused (currently) */
+  --base08: #d7dbe0; /* variable references */
+  --base09: #f78c6c; /* numbers */
+  --base0A: #c792ea; /* keywords */
+  --base0B: #ecc48d; /* strings */
+  --base0C: #f78c6c; /* escape characters in strings */
+  --base0D: #82aaff; /* function calls */
+  --base0E: #c792ea; /* operators */
+  --base0F: #d3423e; /* "Embedded" (whatever that means) */
+}
+
+.light pre {
+  --base00: #fbfbfb; /* editor background */
+  --base01: #e0e0e0; /* unused (currently) */
+  --base02: #d6d6d6; /* unused (currently) */
+  --base03: #989fb1; /* code comments */
+  --base04: #969896; /* unused (currently) */
+  --base05: #2e3039; /* fallback font color */
+  --base06: #282a2e; /* unused (currently) */
+  --base07: #1d1f21; /* unused (currently) */
+  --base08: #403f53; /* variable references */
+  --base09: #aa0982; /* numbers */
+  --base0A: #994cc3; /* keywords */
+  --base0B: #c96765; /* strings */
+  --base0C: #aa0982; /* escape characters in strings */
+  --base0D: #4876d6; /* function calls */
+  --base0E: #994cc3; /* operators */
+  --base0F: #d3423e; /* "Embedded" (whatever that means) */
+}
+
+.prose pre[data-line-numbers='true']:not([data-lang='sh']) {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.prose
+  pre[data-line-numbers='true']:not([data-lang='sh'])
+  [data-line-number]:before {
+  padding-left: 0rem;
+  content: attr(data-line-number);
+  text-align: right;
+  display: inline-block;
+  width: 3.5rem;
+  color: var(--base03);
+  padding-right: 1.5rem;
+  position: sticky;
+  left: 0;
+  background-color: var(--base00);
+}
+
+.prose
+  pre[data-line-numbers='true']:not([data-lang='sh'])
+  [data-line-number]:before
+  .codeblock-line[data-highlight='true']:before {
+  background: var(--base0E);
+}
+
+.prose pre[data-add]:not([data-lang='sh']) [data-diff-line-number]:before,
+.prose pre[data-remove]:not([data-lang='sh']) [data-diff-line-number]:before {
+  content: attr(data-diff-line-number);
+}
+
+.prose pre > code {
+  display: inline-block;
+  min-width: 100%;
+}
+
+.codeblock-line {
+  display: block;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.codeblock-line[data-highlight='true']:after,
+.prose pre[data-remove] .codeblock-line[data-remove='true']:after,
+.prose pre[data-add] .codeblock-line[data-add='true']:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.15;
+}
+
+.codeblock-line[data-highlight='true']:before {
+  border-left: 6px solid var(--base0E);
+}
+
+.codeblock-line[data-highlight='true']:after {
+  background: var(--base0E);
+}
+
+.prose pre[data-remove] .codeblock-line[data-remove='true']:before {
+  content: '-';
+}
+
+.prose pre[data-remove] .codeblock-line[data-remove='true']:after {
+  background: var(--color-red-500);
+}
+
+.prose pre[data-add] .codeblock-line[data-add='true']:before {
+  content: '+';
+}
+
+.prose pre[data-add] .codeblock-line[data-add='true']:after {
+  background: var(--color-green-500);
+}
+
+.prose pre {
+  position: relative;
+}
+
+.prose pre[data-filename]:before {
+  content: attr(data-filename);
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.prose pre[data-lang]:after {
+  content: attr(data-lang);
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+/* TODO: support callout-info, callout-warning, and callout-error */
