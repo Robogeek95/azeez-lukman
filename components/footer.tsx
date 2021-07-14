@@ -16,7 +16,7 @@ function NewsletterSection() {
   // const user = useOptionalUser()
   return (
     <div>
-      <H6>Stay up to date</H6>
+      <H6>Don&apos;t forget to stay up to date</H6>
       <div className="mt-4 max-w-md">
         <Paragraph>
           Subscribe to the newsletter to stay up to date with articles and much
@@ -91,6 +91,7 @@ function SitemapSection() {
         <FooterLink name="workshops" href="/workshops" />
         <FooterLink name="resume" href="/resume" />
         <FooterLink name="about" href="/about" />
+        <FooterLink name="contact" href="/contact" />
       </ul>
     </div>
   );
@@ -102,13 +103,13 @@ function AboutSection() {
       <H4 as="h6">Azeez Lukman</H4>
 
       <div className="flex mt-12 dark:text-blueGray-500 text-gray-500 space-x-4">
-        <a href="https://kcd.im/github">
+        <a href="#">
           <GithubIcon />
         </a>
-        <a href="https://kcd.im/youtube">
+        <a href="#">
           <YoutubeIcon />
         </a>
-        <a href="https://kcd.im/twitter">
+        <a href="#">
           <TwitterIcon />
         </a>
       </div>
@@ -144,16 +145,20 @@ function Footer() {
         </div>
         {/* )} */}
 
-        <div className="col-span-2 mt-20 md:col-start-5 md:row-start-1 md:mt-0">
+        {/* <div className="col-span-2 mt-20 md:col-start-5 md:row-start-1 md:mt-0">
           <ContactSection />
         </div>
 
         <div className="col-span-2 mt-20 md:col-start-7 md:row-start-1 md:mt-0 lg:col-start-5 lg:row-start-2 lg:mt-16">
           <GeneralSection />
+        </div> */}
+
+        <div className="col-span-2 mt-20 md:col-start-5 md:row-start-1 md:mt-0">
+          <SitemapSection />
         </div>
 
         <div className="col-span-full mt-20 md:col-span-2 md:col-start-5 lg:col-start-5 lg:row-span-2 lg:row-start-1 lg:ml-56 lg:mt-0">
-          <SitemapSection />
+          <GeneralSection />
         </div>
 
         {/*
@@ -166,7 +171,7 @@ function Footer() {
         </div>
         {/* )} */}
 
-        <div className="col-span-full mt-24 dark:text-blueGray-500 text-gray-500 text-lg md:mt-44">
+        <div className="col-span-full mt-24 dark:text-blueGray-500 text-gray-500 text-lg md:mt-20">
           <span>All rights reserved</span>{" "}
           <span className="block md:inline">{`© Azeez Lukman ${new Date().getFullYear()}`}</span>
         </div>
