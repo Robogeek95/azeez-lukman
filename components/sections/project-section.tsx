@@ -37,7 +37,7 @@ function ProjectSection() {
           title="MaterialPal"
           description="www.materialpal.vercel.app"
           imageUrl="/proj"
-          imageAlt="Testing Javascript logo"
+          imageAlt="materialpal logo"
           projectUrl="https://materialpal.vercel.app/"
         />
       </div>

@@ -13,7 +13,7 @@ function IntroductionSection() {
       </div>
       <div className="col-span-full mt-12 space-y-12 lg:col-span-5 lg:col-start-7 lg:mt-0">
         <H2>
-          {`I'm Azeez Lukman, I’m a passionately driven Software developer.`}
+          {`I'm Azeez Lukman, I’m a hardcore full-stack developer.`}
         </H2>
         <H2 variant="secondary" as="p">
           {`I'm that farmboy who codes, I'm a big lover of pets, exotic ones expecially. When i’m not at the building softwares you can find me breeding rabbits.`}

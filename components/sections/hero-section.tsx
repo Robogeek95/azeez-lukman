@@ -2,10 +2,11 @@ import * as React from "react";
 // import {images} from '../../images'
 import { ArrowButton } from "../arrow-button";
 import { Grid } from "../grid";
-import { H2, H3 } from "../typography";
+import { H2, H3, Paragraph } from "../typography";
 import { Button } from "../button";
 import Image from "next/image";
 import clsx from "clsx";
+import { Tape } from "../tape";
 
 // Note that the image overlaps the right edge of the grid by `8vw`. This `8vw`
 // needs to stay in sync with the `10vw` margins of the grid component.
@@ -15,7 +16,11 @@ function HeroSection() {
   return (
     <Grid className="lg:pb-12 lg:h-hero">
       <div className="relative col-span-full px-4 lg:col-span-6 lg:col-start-7 lg:px-0 lg:h-full">
-        <div className="bottom-0 left-0 right-0 top-0 flex items-center justify-center pointer-events-none lg:absolute lg:-right-8">
+        <div className="bottom-0 left-0 right-0 top-0 flex bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:absolute lg:-right-8">
+          <Tape direction="top-right" />
+          <Tape direction="top-left" />
+          <Tape direction="bottom-right" />
+          <Tape direction="bottom-left" />
           <Image
             className="w-full h-auto max-h-screen object-contain"
             src="/me"
@@ -23,6 +28,12 @@ function HeroSection() {
             height="100%"
             width="100%"
           />
+          <div
+            className="absolute bottom-2 text-aqua"
+            style={{ fontFamily: "cursive" }}
+          >
+            <Paragraph>Azeez Lukman</Paragraph>
+          </div>
         </div>
       </div>
 
