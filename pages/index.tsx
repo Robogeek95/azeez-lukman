@@ -28,7 +28,7 @@ function IndexRoute({ blogRecommendations }) {
       {/* <ProblemSolutionSection /> */}
       <Spacer size="medium" />
       <BlogSection
-        articles={[]}
+        articles={[{}]}
         title="Most popular of my articles."
         description="I document my experience in writing here."
       />
