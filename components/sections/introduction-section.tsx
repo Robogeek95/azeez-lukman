@@ -7,9 +7,9 @@ import Image from "next/image";
 
 function IntroductionSection() {
   return (
-    <Grid>
-      <div className="col-span-full lg:col-span-4">
-        <Image src="/me2" alt="azeez lukman" height="150px" width="150px" />
+    <Grid className="items-center">
+      <div className="col-span-full lg:col-span-5">
+        <img className="w-auto h-auto object-cover rounded" src="/al1.jpg" alt="azeez lukman"/>
       </div>
       <div className="col-span-full mt-12 space-y-12 lg:col-span-5 lg:col-start-7 lg:mt-0">
         <H2>

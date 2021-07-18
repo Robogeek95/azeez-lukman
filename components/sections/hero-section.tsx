@@ -16,24 +16,17 @@ function HeroSection() {
   return (
     <Grid className="lg:pb-12 lg:h-hero">
       <div className="relative col-span-full px-4 lg:col-span-6 lg:col-start-7 lg:px-0 lg:h-full">
-        <div className="bottom-0 left-0 right-0 top-0 flex bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:absolute lg:-right-8">
+        <div className="bottom-0 left-0 right-0 top-0 flex bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:-right-8 p-2 h-full">
           <Tape direction="top-right" />
           <Tape direction="top-left" />
           <Tape direction="bottom-right" />
           <Tape direction="bottom-left" />
-          <Image
-            className="w-full h-auto max-h-screen object-contain"
-            src="/me"
+
+          <img
+            className="w-auto h-auto object-cover rounded"
+            src="/al2.jpg"
             alt="azeez lukman"
-            height="100%"
-            width="100%"
           />
-          <div
-            className="absolute bottom-2 text-aqua"
-            style={{ fontFamily: "cursive" }}
-          >
-            <Paragraph>Azeez Lukman</Paragraph>
-          </div>
         </div>
       </div>
 
@@ -49,7 +42,7 @@ function HeroSection() {
             <Button variant="secondary">Read my articles</Button>
           </div>
         </div>
-        <div className="hidden pt-12 lg:block">
+        <div className="hidden mb-24 pt-12 lg:block">
           <ArrowButton href="" direction="down" textSize="small">
             There&apos;s more about me
           </ArrowButton>

@@ -25,8 +25,6 @@ function IndexRoute({ blogRecommendations }) {
       <Spacer size="large" />
       <IntroductionSection />
       <Spacer size="large" />
-      {/* <ProblemSolutionSection /> */}
-      <Spacer size="medium" />
       <BlogSection
         articles={[{}]}
         title="Most popular of my articles."
@@ -36,7 +34,7 @@ function IndexRoute({ blogRecommendations }) {
       <ProjectSection />
       <Spacer size="large" />
       <WorkshopSection />
-      <Spacer size="medium" />
+      <Spacer size="large" />
       <AboutSection />
     </div>
   );

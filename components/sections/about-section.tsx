@@ -11,12 +11,12 @@ function AboutSection() {
       <div className="table col-span-full lg:col-span-6">
         <div className="table-cell align-middle text-center">
           <div className="aspect-h-4 aspect-w-3">
-            <Image
+            <img
               className="rounded-lg object-cover"
               alt="me"
               width="100%"
               height="100%"
-              src="/me"
+              src="/al1.jpg"
             />
           </div>
         </div>
@@ -32,7 +32,7 @@ function AboutSection() {
           src="/me"
         />
 
-        <H2>World-class software developer.</H2>
+        <H2>I&apos;m a world-class software developer.</H2>
         <H2 variant="secondary" as="p">
           passionate about pushing world-class software.
         </H2>

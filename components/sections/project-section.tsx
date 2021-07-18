@@ -16,16 +16,16 @@ function ProjectSection() {
         </div>
 
         <ArrowButton href="/projects</div>" direction="right">
-          See the all projects
+          See all my projects
         </ArrowButton>
       </div>
 
       {/* Todo: replace image url */}
       <div className="col-span-full lg:col-span-6">
         <ProjectCard
-          title="Walletsxchanges"
+          title="Walletsxchange"
           description="www.walletsxchange.com"
-          imageUrl="/proj"
+          imageUrl="/walletsxchange.png"
           imageAlt="walletsxchnge logo"
           projectUrl="https://walletsxchange.com/"
         />
@@ -36,7 +36,7 @@ function ProjectSection() {
         <ProjectCard
           title="MaterialPal"
           description="www.materialpal.vercel.app"
-          imageUrl="/proj"
+          imageUrl="/materialpal.png"
           imageAlt="materialpal logo"
           projectUrl="https://materialpal.vercel.app/"
         />
