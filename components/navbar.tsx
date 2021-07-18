@@ -36,17 +36,17 @@ function MenuButton() {
 }
 
 function NavLink({
-  to,
+  href,
   children,
   ...rest
-}: Omit<Parameters<typeof Link>["0"], "to"> & { to: string }) {
+}: Omit<Parameters<typeof Link>["0"], "to"> & { href: string }) {
   const location = useRouter();
   const isSelected =
-    to === location.pathname || location.pathname.startsWith(`${to}/`);
+    href === location.pathname || location.pathname.startsWith(`${href}/`);
 
   return (
     <li>
-      <Link href={to} {...rest}>
+      <Link href={href} {...rest}>
         <a
           className={clsx(
             "block px-5 py-2 hover:underline whitespace-nowrap text-lg font-medium",
@@ -74,11 +74,11 @@ function Navbar() {
         </Link>
 
         <ul className="hidden lg:flex">
-          <NavLink to="/blog">Blog</NavLink>
-          <NavLink to="/podcast">Projects</NavLink>
-          <NavLink to="/workshops">Workshops</NavLink>
-          <NavLink to="/workshops">Resume</NavLink>
-          <NavLink to="/about">About</NavLink>
+          <NavLink href="/blog">Blog</NavLink>
+          <NavLink href="/podcast">Projects</NavLink>
+          <NavLink href="/workshops">Workshops</NavLink>
+          <NavLink href="/resume">Resume</NavLink>
+          <NavLink href="/about">About</NavLink>
         </ul>
 
         <div className="flex items-center justify-center">
