@@ -9,7 +9,7 @@ import { GlobeIcon } from "../icons/globe-icon";
 function WorkshopSection() {
   return (
     <Grid>
-      <div className="flex flex-col col-span-full justify-center mt-12 space-y-12 lg:col-span-6 lg:mt-0 lg:py-20">
+      <div className="flex flex-col col-span-full justify-center mt-24 space-y-12 lg:col-span-6 lg:mt-0 lg:py-20">
         <div className="flex items-center text-green-600 gap-3 font-bold text-black mt-6 dark:text-white">
           <GlobeIcon /> <H3 className="text-green-600 ">Remote workshops</H3>
         </div>

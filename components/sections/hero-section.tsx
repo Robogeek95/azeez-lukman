@@ -15,12 +15,14 @@ function HeroSection() {
   // span the height of the screens, minus 10rem for the navbar (h-40).
   return (
     <Grid className="lg:pb-12 lg:h-hero">
-      <div className="relative col-span-full px-4 lg:col-span-6 lg:col-start-7 lg:px-0 lg:h-full">
-        <div className="bottom-0 left-0 right-0 top-0 flex bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:-right-8 p-2 h-full">
-          <Tape direction="top-right" />
-          <Tape direction="top-left" />
-          <Tape direction="bottom-right" />
-          <Tape direction="bottom-left" />
+      <div className="col-span-full px-4 lg:col-span-6 lg:col-start-7 lg:px-0">
+        <div className="relative bottom-0 left-0 right-0 top-0 flex bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:-right-8 p-2">
+          <div className="hidden lg:block">
+            <Tape direction="top-right" />
+            <Tape direction="top-left" />
+            <Tape direction="bottom-right" />
+            <Tape direction="bottom-left" />
+          </div>
 
           <img
             className="w-auto h-auto object-cover rounded"
