@@ -6,6 +6,7 @@ import { ArrowButton } from "./arrow-button";
 import { GithubIcon } from "./icons/github-icon";
 import { TwitterIcon } from "./icons/twitter-icon";
 import { YoutubeIcon } from "./icons/youtube-icon";
+import DarkModeToggle from "./darkModeToggle";
 
 interface FooterLinkProps {
   name: string;
@@ -135,8 +136,10 @@ function Footer() {
   return (
     <footer className="pb-16 pt-48 border-t border-gray-200 dark:border-gray-600">
       <Grid className="grid-rows-max-content">
-        <div className="col-span-full md:col-span-3 lg:row-span-2">
+          <div className="col-span-full md:col-span-3 lg:row-span-2 flex justify-between flex-row">
           <AboutSection />
+
+          <DarkModeToggle />
         </div>
 
         {/* {userInfo?.convertKit?.subscribedToNewsletter ? null : ( */}
