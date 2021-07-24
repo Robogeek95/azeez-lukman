@@ -16,7 +16,7 @@ function IntroductionSection() {
           {`I'm Azeez Lukman, I’m a hardcore full-stack developer.`}
         </H2>
         <H2 variant="secondary" as="p">
-          {`I'm that farmboy who codes, I'm a big lover of pets, exotic ones expecially. When i’m not at the building softwares you can find me breeding rabbits.`}
+          {`I'm that farmboy who codes, I'm a big lover of pets, exotic ones expecially. When i’m not at my system building softwares you can find me on the farm breeding rabbits.`}
         </H2>
         <ArrowButton href="contact" direction="right">Get in touch with me</ArrowButton>
       </div>
