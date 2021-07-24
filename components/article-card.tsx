@@ -1,21 +1,13 @@
 import * as React from "react";
 import formatDate from "date-fns/format";
 import parseISO from "date-fns/parseISO";
-import type { MdxListItem } from "types";
 import { H3 } from "./typography";
 import { CopyIcon } from "./icons/copy-icon";
 
 function ArticleCard({
   readTime,
   slug = "todoBlog",
-}: // frontmatter: {
-//   date = formatDate(new Date(), 'yyyy-MM-ii'),
-//   title = "Untitled Post",
-//   // TODO: add a default banner and alt for unbannered articles
-//   bannerAlt = "todo",
-//   bannerUrl = "#",
-// },
-MdxListItem) {
+}) {
   return (
     <a className="group relative w-full" href={`/blog/${slug}`}>
       <button className="absolute z-10 left-4 top-8 p-4 text-black whitespace-nowrap text-lg font-medium bg-white rounded-lg group-hover:opacity-100 transition lg:px-8 lg:py-4 lg:opacity-0">

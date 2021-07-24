@@ -8,7 +8,7 @@ interface ArrowButtonProps {
   direction?: ArrowIconProps["direction"];
   textSize?: "small" | "medium";
   className?: string;
-  href: string;
+  href?: string;
 }
 
 function ArrowButton({
