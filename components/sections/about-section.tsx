@@ -4,6 +4,13 @@ import { H2, Paragraph } from "../typography";
 import { ArrowButton } from "../arrow-button";
 import { Grid } from "../grid";
 import Image from "next/image";
+import AngularIcon from "../icons/angular-icon";
+import FirebaseIcon from "../icons/firebase-icon";
+import ReactIcon from "../icons/react-icon";
+import NodejsIcon from "../icons/nodejs-logo";
+import PythonIcon from "../icons/python-logo";
+import IonicIcon from "../icons/ionic-icon";
+import FigmaIcon from "../icons/figma-icon";
 
 function AboutSection() {
   return (
@@ -24,13 +31,15 @@ function AboutSection() {
 
       <div className="flex flex-col col-span-full justify-center space-y-12 lg:col-span-5 lg:col-start-8 lg:mt-0">
         {/* we could use some stickers here */}
-        <Image
-          className="self-start w-auto h-48"
-          alt="some stickers"
-          width="100%"
-          height="100%"
-          src="/me"
-        />
+        <div className="text-gray-700 flex gap-5 mt-8 lg:mt-0">
+          <AngularIcon />
+          <FirebaseIcon />
+          <ReactIcon />
+          <FigmaIcon />
+          <IonicIcon />
+          <NodejsIcon />
+          <PythonIcon />     
+        </div>
 
         <H2>I&apos;m a world-class software developer.</H2>
         <H2 variant="secondary" as="p">
