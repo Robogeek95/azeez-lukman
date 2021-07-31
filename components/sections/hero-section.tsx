@@ -14,37 +14,38 @@ function HeroSection() {
   // The grid has a computed height on the large breakpoint, to make the Hero
   // span the height of the screens, minus 10rem for the navbar (h-40).
   return (
-    <Grid className="lg:pb-12 lg:h-hero">
+    <Grid className=" gap-8">
       <div className="col-span-full lg:col-span-6 lg:col-start-7">
-        <div className="relative bottom-0 left-0 right-0 top-0 flex bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:-right-8 p-2">
+        <div
+          className="relative bottom-0 left-0 right-0 top-0 flex w-full h-full bg-gray-700 rounded-lg items-center justify-center pointer-events-none lg:-right-8 p-2"
+          style={{
+            background: "url('/al2.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="hidden lg:block">
             <Tape direction="top-right" />
             <Tape direction="top-left" />
             <Tape direction="bottom-right" />
             <Tape direction="bottom-left" />
           </div>
-
-          <img
-            className="w-auto h-auto object-cover rounded"
-            src="/al2.jpg"
-            alt="azeez lukman"
-          />
         </div>
       </div>
 
-      <div className="col-span-full lg:flex lg:flex-col lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:justify-center lg:h-full">
+      <div className="col-span-full lg:flex lg:flex-col lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:justify-center">
         <div className="flex flex-auto flex-col justify-center lg:mt-20 py-20">
-          <H2 className="text-green-900 mb-3">Hello 🧑</H2>
+          <H2 className="mb-3">Hello,</H2>
           <H3 className="text-gray-900 leading-10">
             i help build amazing softwares that makes the world a better and
-            safer place. Everyday... Allday
+            safer place. Everyday... Allday ✌️
           </H3>
           <div className="flex flex-col mt-14 space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
             <Button variant="primary">Contact me</Button>
             <Button variant="secondary">Read my articles</Button>
           </div>
         </div>
-        <div className="hidden mb-24 pt-12 lg:block">
+        <div className="hidden pt-12 lg:block">
           <ArrowButton href="" direction="down" textSize="small">
             There&apos;s more about me
           </ArrowButton>

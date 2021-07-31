@@ -7,6 +7,15 @@ import { CopyIcon } from "./icons/copy-icon";
 function ArticleCard({
   readTime,
   slug = "todoBlog",
+  tags = [
+    "react",
+    "fauna",
+    "tailwindcss",
+    "tailwindcss",
+    "tailwindcss",
+    "tailwindcss",
+    "tailwindcss",
+  ],
 }) {
   return (
     <a className="group relative w-full" href={`/blog/${slug}`}>
@@ -25,16 +34,23 @@ function ArticleCard({
         />
       </div>
 
-      {/* <div className="mt-8 flex gap-3">
-        <div className="text-white rounded bg-green-800 px-2 py-1">react</div>
-        <div className="text-white rounded bg-green-800 px-2 py-1">fauna</div>
-      </div> */}
+      {/* tags */}
+      <div className="mt-8 col-auto gap-3 mb-4">
+        {tags.map((tag) => (
+          <div
+            key={tag}
+            className="text-white rounded bg-gray-800 px-2 py-1 float-left mb-3 mr-3"
+          >
+            {tag}
+          </div>
+        ))}
+      </div>
 
       <div className="mt-2 text-gray-500 text-xl font-medium">
         {/* {formatDate(parseISO(date), 'PPP')} — {readTime?.text ?? 'quick read'} */}
         April 15, 2000 - {readTime?.text ?? "quick read"}
       </div>
-      <div className="mt-4 group-hover:underline">
+      <div className="mt-4 group-hover:underline capitalize">
         {/* <H3>{title}</H3> */}
         <H3>dummy title</H3>
       </div>

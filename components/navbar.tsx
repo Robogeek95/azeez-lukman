@@ -46,7 +46,7 @@ function Navbar() {
       <nav className="flex items-center justify-between px-8 lg:px-16 py-6 dark:text-white lg:py-9">
         <Link href="/">
           <a className="block hover:underline whitespace-nowrap text-2xl font-medium transition">
-            <h1>Azeez Lukman</h1>
+            <h1>🧑 Azeez Lukman</h1>
           </a>
         </Link>
 
