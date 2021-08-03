@@ -54,7 +54,7 @@ function Navbar() {
           <NavLink href="/blog">Blog</NavLink>
           <NavLink href="/podcast">Projects</NavLink>
           <NavLink href="/workshops">Workshops</NavLink>
-          <NavLink href="/resume">Resume</NavLink>
+          <NavLink href="/contact">contact</NavLink>
           <NavLink href="/about">About</NavLink>
         </ul>
 
