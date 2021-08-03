@@ -6,6 +6,8 @@ import { WorkshopSection } from "../components/sections/workshop-section";
 import { HeroSection } from "../components/sections/hero-section";
 import { IntroductionSection } from "../components/sections/introduction-section";
 import { Spacer } from "../components/spacer";
+import { Button, ButtonLink } from "../components/button";
+import Link from "next/link";
 
 function Home() {
   return (

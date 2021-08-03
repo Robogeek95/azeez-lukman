@@ -7,6 +7,7 @@ import { Button } from "../button";
 import Image from "next/image";
 import clsx from "clsx";
 import { Tape } from "../tape";
+import Link from "next/link";
 
 // Note that the image overlaps the right edge of the grid by `8vw`. This `8vw`
 // needs to stay in sync with the `10vw` margins of the grid component.
@@ -37,8 +38,8 @@ function HeroSection() {
         <div className="flex flex-auto flex-col justify-center lg:mt-20 py-20">
           <H2 className="mb-3">Hello,</H2>
           <H3 className="text-gray-900 leading-10">
-            i help build amazing softwares that makes the world a better and
-            safer place. Everyday... Allday ✌️
+            I create outlandishly phenomenal experience for the web and beyond.
+            ✌️
           </H3>
           <div className="flex flex-col mt-14 space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
             <Button variant="primary">Contact me</Button>
@@ -46,9 +47,13 @@ function HeroSection() {
           </div>
         </div>
         <div className="hidden pt-12 lg:block">
-          <ArrowButton href="" direction="down" textSize="small">
-            There&apos;s more about me
-          </ArrowButton>
+          <Link href="#intro">
+            <a>
+              <ArrowButton direction="down" textSize="small">
+                There&apos;s more about me
+              </ArrowButton>
+            </a>
+          </Link>
         </div>
       </div>
     </Grid>

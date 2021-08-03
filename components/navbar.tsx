@@ -50,11 +50,11 @@ function Navbar() {
           </a>
         </Link>
 
-        <ul className="hidden lg:flex">
+        <ul className="hidden lg:flex capitalize">
           <NavLink href="/blog">Blog</NavLink>
-          <NavLink href="/podcast">Projects</NavLink>
+          <NavLink href="/projects">Projects</NavLink>
           <NavLink href="/workshops">Workshops</NavLink>
-          <NavLink href="/contact">contact</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
           <NavLink href="/about">About</NavLink>
         </ul>
 
