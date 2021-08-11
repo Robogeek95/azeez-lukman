@@ -7,6 +7,7 @@ import { GithubIcon } from "./icons/github-icon";
 import { TwitterIcon } from "./icons/twitter-icon";
 import { YoutubeIcon } from "./icons/youtube-icon";
 import DarkModeToggle from "./darkModeToggle";
+import { LinkedInIcon } from "./icons/linkedin-icon";
 
 interface FooterLinkProps {
   name: string;
@@ -105,13 +106,13 @@ function AboutSection() {
 
       <div className="flex mt-12 dark:text-blueGray-500 text-gray-500 space-x-4">
         <a href="#">
-          <GithubIcon />
+          <GithubIcon filled />
         </a>
         <a href="#">
-          <YoutubeIcon />
+          <LinkedInIcon filled />
         </a>
         <a href="#">
-          <TwitterIcon />
+          <TwitterIcon filled />
         </a>
       </div>
     </div>
@@ -136,7 +137,7 @@ function Footer() {
   return (
     <footer className="pb-16 pt-48 border-t border-gray-200 dark:border-gray-600">
       <Grid className="grid-rows-max-content">
-          <div className="col-span-full md:col-span-3 lg:row-span-2 flex justify-between flex-row">
+        <div className="col-span-full md:col-span-3 lg:row-span-2 flex justify-between flex-row">
           <AboutSection />
 
           <DarkModeToggle />
