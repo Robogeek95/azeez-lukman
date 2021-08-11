@@ -1,4 +1,5 @@
 import { Grid } from "../components/grid";
+import ContactLinksIcons from "../components/icons/contactLinks-Icons";
 import { Spacer } from "../components/spacer";
 import Timeline from "../components/timeline";
 import { H3, H4, Paragraph } from "../components/typography";
@@ -6,9 +7,15 @@ import { H3, H4, Paragraph } from "../components/typography";
 function About() {
   return (
     <>
-      <div className="bg-yellow-700 text-white">
-        <div className="container mx-auto py-12">
-          <h2 className="text-3xl">About Me</h2>
+      <div className="bg-indigo-900 text-white">
+        <div className="container mx-auto flex justify-between items-center px-20 py-8">
+          <div className="">
+            <h2 className="text-3xl">About Me</h2>
+          </div>
+
+          <div className="">
+            <ContactLinksIcons />
+          </div>
         </div>
       </div>
 
@@ -97,18 +104,6 @@ function About() {
                   Got certificates from Microsoft (x1), Maryland (x1), Stanford
                   (x3), Berkeley (x2) and others
                 </li>
-              </ul>
-            </div>
-
-            <div className="mt-8">
-              <H3 className="font-bold text-2xl mb-4">Links</H3>
-              <ul>
-                <li className="dark:text-gray-200  my-3">GitHub</li>
-                <li className="dark:text-gray-200  my-3">Telegram</li>
-                <li className="dark:text-gray-200  my-3">
-                  Email — hello@miloslav.website
-                </li>
-                <li className="dark:text-gray-200  my-3">CV</li>
               </ul>
             </div>
 

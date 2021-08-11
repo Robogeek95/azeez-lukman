@@ -1,14 +1,9 @@
 import * as React from "react";
-// import {useOptionalUser, useOptionalUserInfo} from '../utils/providers'
 import { H4, H6, Paragraph } from "./typography";
 import { Grid } from "./grid";
 import { ArrowButton } from "./arrow-button";
-import { GithubIcon } from "./icons/github-icon";
-import { TwitterIcon } from "./icons/twitter-icon";
-import { YoutubeIcon } from "./icons/youtube-icon";
 import DarkModeToggle from "./darkModeToggle";
-import { LinkedInIcon } from "./icons/linkedin-icon";
-
+import ContactLinksIcons from "./icons/contactLinks-Icons";
 interface FooterLinkProps {
   name: string;
   href: string;
@@ -104,16 +99,8 @@ function AboutSection() {
     <div>
       <H4 as="h6">Azeez Lukman</H4>
 
-      <div className="flex mt-12 dark:text-blueGray-500 text-gray-500 space-x-4">
-        <a href="#">
-          <GithubIcon filled />
-        </a>
-        <a href="#">
-          <LinkedInIcon filled />
-        </a>
-        <a href="#">
-          <TwitterIcon filled />
-        </a>
+      <div className="mt-12">
+        <ContactLinksIcons />
       </div>
     </div>
   );
