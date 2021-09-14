@@ -38,7 +38,7 @@ function AboutSection() {
           <FigmaIcon />
           <IonicIcon />
           <NodejsIcon />
-          <PythonIcon />     
+          <PythonIcon />
         </div>
 
         <H2>I&apos;m a world-class software developer.</H2>

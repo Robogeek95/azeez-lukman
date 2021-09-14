@@ -88,13 +88,13 @@ function TimelineContent({ content }: { content: content }) {
       </div>
 
       <div className="z-20 p-2 order-1 bg-gray-300 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full mt-8">
-        <div className="rounded-full w-full h-full bg-white"></div>
+        <div className="rounded-full w-full h-full bg-red-800"></div>
       </div>
 
       <div className="pl-8  w-8/12 order-1">
         <div className="bg-gray-300 dark:bg-gray-800 rounded-lg shadow-xl px-6 py-4">
           <ul>
-            <H4 className="text-xl font-semibold mb-4">{header}</H4>
+            {/* <H4 className="text-xl font-semibold mb-4">{header}</H4> */}
 
             {body.map((body) => (
               <li key={body} className="dark:text-gray-200  my-3">
@@ -116,11 +116,6 @@ export default function Timeline() {
           Experience and Timeline
         </H3>
       </div>
-
-      <div
-        className="border-4 absolute border-opacity-20 border-gray-700 h-full border"
-        style={{ left: "38.65%" }}
-      ></div>
 
       <div>
         {timeline.map((content) => (

@@ -4,6 +4,7 @@ import { LinkedInIcon } from "../components/icons/linkedin-icon";
 import { GlobeIcon } from "../components/icons/globe-icon";
 import { H2, H3, H4, Paragraph } from "../components/typography";
 import { Button } from "../components/button";
+import { UserIcon } from "../components/icons/user-icon";
 
 function ContactPage() {
   return (
@@ -20,7 +21,7 @@ function ContactPage() {
 
           <div
             id="profile"
-            className="w-full lg:w-7/12 rounded-lg lg:rounded-l-none lg:rounded-r-lg shadow-2xl bg-gray-200 opacity-75 mx-6 lg:mx-0 dark:bg-gray-700"
+            className="w-full lg:w-7/12 rounded-lg lg:rounded-l-none lg:rounded-r-lg shadow-xl bg-gray-100 opacity-75 mx-6 lg:mx-0 dark:bg-gray-700"
           >
             <div className="p-4 md:p-12 text-center lg:text-left">
               <div className="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"></div>
@@ -30,9 +31,12 @@ function ContactPage() {
               </h1>
               <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
-              <Paragraph className="pt-4 text-2xl font-bold flex items-center justify-center lg:justify-start dark:text-white">
-                Send me a message
-              </Paragraph>
+              <H4 className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
+                <span className="mr-2">
+                  <UserIcon />
+                </span>
+                Azeez Lukman
+              </H4>
 
               <H4 className="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start">
                 <span className="mr-2">
@@ -40,15 +44,22 @@ function ContactPage() {
                 </span>
                 Lagos, Nigeria
               </H4>
-              <Paragraph className="pt-8 text-sm dark:text-gray-200">
-                Got a question or something exiting or you just want to say
-                hello? I'm glad to meet you too. So go ahead and take a shot!
-              </Paragraph>
+
+              <div className="mt-8">
+                <Paragraph className="text-xl font-bold flex items-center justify-center lg:justify-start text-gray-800 dark:text-white">
+                  Send me a message?
+                </Paragraph>
+
+                <Paragraph className="mt-4 text-sm text-gray-800  dark:text-gray-200">
+                  Got a question or something exiting or you just want to say
+                  hello? I'm glad to meet you too. So go ahead and take a shot!
+                </Paragraph>
+              </div>
 
               <address>
                 <div className="pt-12 pb-8">
                   <a href="mailto:azeezlukman95@gmail.com">
-                    <Button variant="primary">Drop me a mail</Button>
+                    <Button size="medium" variant="secondary">Drop me a mail</Button>
                   </a>
                 </div>
               </address>
