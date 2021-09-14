@@ -10,8 +10,6 @@ function Projects() {
   return (
     <>
       <HeroSection
-        title="Building for the next generation."
-        subtitle="I help  build softwares that makes the world  better place."
       // imageUrl={images.onewheel()}
       // imageAlt={images.onewheel.alt}
       />

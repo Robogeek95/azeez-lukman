@@ -52,7 +52,7 @@ function ContactPage() {
 
                 <Paragraph className="mt-4 text-sm text-gray-800  dark:text-gray-200">
                   Got a question or something exiting or you just want to say
-                  hello? I'm glad to meet you too. So go ahead and take a shot!
+                  hello? I&apos;m glad to meet you too. So go ahead and take a shot!
                 </Paragraph>
               </div>
 

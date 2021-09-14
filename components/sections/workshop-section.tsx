@@ -28,6 +28,7 @@ function WorkshopSection() {
           <img
             className="w-full h-full rounded-lg object-cover"
             src="/workshop.jpg"
+            alt="workshops"
           />
         </div>
         {/* <div className="absolute -left-12 -top-6 flex flex-col space-y-1">
