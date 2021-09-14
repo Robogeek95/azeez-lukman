@@ -8,6 +8,7 @@ import { IntroductionSection } from "../components/sections/introduction-section
 import { Spacer } from "../components/spacer";
 import { Button, ButtonLink } from "../components/button";
 import Link from "next/link";
+let articles = [{}, {}, {}]
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
       <IntroductionSection />
       <Spacer size="large" />
       <BlogSection
-        articles={[{}]}
+        articles={articles}
         title="Most popular of my articles."
         description="I document my experience in writing here."
       />

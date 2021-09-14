@@ -1,9 +1,9 @@
 import clsx from 'clsx'
 import * as React from 'react'
-import {H2} from '../typography'
-import {ArrowButton} from '../arrow-button'
-import {Grid} from '../grid'
-import {ArticleCard} from '../article-card'
+import { H2 } from '../typography'
+import { ArrowButton } from '../arrow-button'
+import { Grid } from '../grid'
+import { ArticleCard } from '../article-card'
 
 interface BlogSectionProps {
   articles: Array<any>
@@ -34,17 +34,19 @@ function BlogSection({
       </div>
 
       {articles.slice(0, 3).map((article, idx) => (
-        <div
-          key={article.slug}
-          className={clsx('col-span-4', {
-            'hidden lg:block': idx >= 2,
-          })}
-        >
-          <ArticleCard {...article} />
-        </div>
+        <>
+          <div
+            key={article.slug}
+            className={clsx('col-span-4', {
+              'hidden lg:block': idx >= 2,
+            })}
+          >
+            <ArticleCard {...article} />
+          </div>
+        </>
       ))}
     </Grid>
   )
 }
 
-export {BlogSection}
+export { BlogSection }

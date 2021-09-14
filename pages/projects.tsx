@@ -1,4 +1,10 @@
+import { ArrowButton } from "../components/arrow-button";
+import { Grid } from "../components/grid";
+import { ProjectCard } from "../components/project-card";
 import { HeroSection } from "../components/sections/hero-section";
+import { ProjectSection } from "../components/sections/project-section";
+import { Spacer } from "../components/spacer";
+import { H2, H6, Paragraph } from "../components/typography";
 
 function Projects() {
   return (
@@ -6,25 +12,19 @@ function Projects() {
       <HeroSection
         title="Building for the next generation."
         subtitle="I help  build softwares that makes the world  better place."
-        // imageUrl={images.onewheel()}
-        // imageAlt={images.onewheel.alt}
+      // imageUrl={images.onewheel()}
+      // imageAlt={images.onewheel.alt}
       />
+
+      <Spacer size="small" />
 
       <Grid as="main" className="mb-48">
         <div className="hidden col-span-full mb-12 lg:block lg:col-span-4 lg:mb-0">
-          <H6 as="h2">Reasons to invest in your career.</H6>
+          <H6 as="h2">Lorem ipsum dolor sit amet.</H6>
         </div>
         <div className="col-span-full mb-8 lg:col-span-4 lg:mb-20">
           <H6 as="h3" className="mb-4">
-            Become a more confident developer
-          </H6>
-          <Paragraph className="mb-20">
-            Praesent eu lacus odio. Pellentesque vitae lectus tortor. Donec elit
-            nunc, dictum quis condimentum in, impe rdiet at arcu. Donec et nunc
-            vel mas sa fringilla fermentum. Donec in orn are est doler sit amet.
-          </Paragraph>
-          <H6 as="h3" className="mb-4">
-            Earn more money as a developer
+            Lorem ipsum dolor sit amet.
           </H6>
           <Paragraph>
             Praesent eu lacus odio. Pellentesque vitae lectus tortor. Donec elit
@@ -36,26 +36,37 @@ function Projects() {
         </div>
       </Grid>
 
-      <h2 className="sr-only">Courses</h2>
+      <h2 className="sr-only">Projects</h2>
 
-      <Grid className="gap-y-4 mb-24 lg:mb-64">
+      <Grid>
+        <div className="flex flex-col col-span-full mb-20 space-y-10 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+          <div className="space-y-2 lg:space-y-0">
+            <H2>My Projects</H2>
+            <H2 variant="secondary" as="p">
+              These are some of my world class projects
+            </H2>
+          </div>
+        </div>
+
+        {/* Todo: replace image url */}
         <div className="col-span-full lg:col-span-6">
-          <CourseCard
-            title="Epic React"
-            description="The most comprehensive guide for pro’s."
-            imageUrl={images.courseEpicReact()}
-            imageAlt={images.courseEpicReact.alt}
-            courseUrl="https://epicreact.dev"
+          <ProjectCard
+            title="Walletsxchange"
+            description="www.walletsxchange.com"
+            imageUrl="/walletsxchange.png"
+            imageAlt="walletsxchnge logo"
+            projectUrl="https://walletsxchange.com/"
           />
         </div>
 
+        {/* Todo: replace image url */}
         <div className="col-span-full mt-12 lg:col-span-6 lg:mt-0">
-          <CourseCard
-            title="Testing Javascript"
-            description="Learn smart, efficient testing methods."
-            imageUrl={images.courseTestingJS()}
-            imageAlt={images.courseTestingJS.alt}
-            courseUrl="https://testing-library.com"
+          <ProjectCard
+            title="MaterialPal"
+            description="www.materialpal.vercel.app"
+            imageUrl="/materialpal.png"
+            imageAlt="materialpal logo"
+            projectUrl="https://materialpal.vercel.app/"
           />
         </div>
       </Grid>

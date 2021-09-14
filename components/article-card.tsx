@@ -39,20 +39,22 @@ function ArticleCard({
         {tags.map((tag) => (
           <div
             key={tag}
-            className="text-white rounded bg-gray-800 px-2 py-1 float-left mb-3 mr-3"
+            className="text-white rounded-md bg-gray-800 px-2 py-1 float-left mb-3 mr-3 capitalize"
           >
             {tag}
           </div>
         ))}
       </div>
 
-      <div className="mt-2 text-gray-500 text-xl font-medium">
-        {/* {formatDate(parseISO(date), 'PPP')} — {readTime?.text ?? 'quick read'} */}
-        April 15, 2000 - {readTime?.text ?? "quick read"}
-      </div>
+
       <div className="mt-4 group-hover:underline capitalize">
         {/* <H3>{title}</H3> */}
         <H3>dummy title</H3>
+      </div>
+
+      <div className="mt-2 text-gray-500 text-xl font-medium">
+        {/* {formatDate(parseISO(date), 'PPP')} — {readTime?.text ?? 'quick read'} */}
+        April 15, 2000 - {readTime?.text ?? "quick read"}
       </div>
     </a>
   );

@@ -29,7 +29,7 @@ function ButtonInner({
             "border-2 border-blue-400 bg-primary group-hover:border-transparent group-focus:border-transparent":
               variant === "secondary",
             "bg-black": variant === "primary",
-            "dark:bg-gray-600": variant === "primary",
+            // "dark:bg-gray-600": variant === "primary",
           }
         )}
       />
@@ -70,9 +70,9 @@ function Button({
 const ButtonLink = React.forwardRef<
   HTMLAnchorElement,
   ButtonProps & { to: string } & Pick<
-      JSX.IntrinsicElements["a"],
-      "onClick" | "className"
-    >
+    JSX.IntrinsicElements["a"],
+    "onClick" | "className"
+  >
 >(function ButtonLink(
   { children, variant = "primary", className, to, onClick },
   ref

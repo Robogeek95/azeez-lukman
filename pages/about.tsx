@@ -39,13 +39,10 @@ function About() {
             </H2>
 
             <H2 variant="secondary" as="p">
-              I create
-              outlandishly phenomenal experience for the web and beyond.
+              I create phenomenal experiences for the web and beyond.
             </H2>
 
             <Paragraph>
-              <span className="font-semibold text-xl">I create</span>{" "}
-              outlandishly phenomenal experience for the web and beyond.
               I am Keen on building highly interactive sites with need for speed
               and eyes on visual stability.
               <br />
