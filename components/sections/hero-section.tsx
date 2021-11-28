@@ -38,11 +38,11 @@ function HeroSection() {
         <div className="flex flex-auto flex-col justify-center lg:mt-20 py-20">
           <H2 className="mb-3">Hello,</H2>
           <H4 className="text-gray-900 leading-10">
-            I create phenomenal experiences that are inclusive and boost revenue for the web and beyond.
-            ✌️
+            I create phenomenal experiences that are inclusive and boost revenue
+            for the web and beyond. ✌️
           </H4>
           <div className="flex flex-col mt-14 space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
-            <Link href="/about">
+            <Link href="/contact">
               <a>
                 <Button variant="primary">Contact me</Button>
               </a>

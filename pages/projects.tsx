@@ -9,10 +9,10 @@ import { H2, H6, Paragraph } from "../components/typography";
 function Projects() {
   return (
     <>
-      <HeroSection
+      {/* <HeroSection
       // imageUrl={images.onewheel()}
       // imageAlt={images.onewheel.alt}
-      />
+      /> */}
 
       <Spacer size="small" />
 

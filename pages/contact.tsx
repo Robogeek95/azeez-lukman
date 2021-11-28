@@ -52,14 +52,23 @@ function ContactPage() {
 
                 <Paragraph className="mt-4 text-sm text-gray-800  dark:text-gray-200">
                   Got a question or something exiting or you just want to say
-                  hello? I&apos;m glad to meet you too. So go ahead and take a shot!
+                  hello? I&apos;m glad to meet you too. So go ahead and take a
+                  shot!
                 </Paragraph>
               </div>
 
               <address>
-                <div className="pt-12 pb-8">
+                <div className="pt-12 pb-8 flex">
                   <a href="mailto:azeezlukman95@gmail.com">
-                    <Button size="medium" variant="secondary">Drop me a mail</Button>
+                    <Button size="medium" variant="primary">
+                      Drop me a mail
+                    </Button>
+                  </a>
+
+                  <a href="tel:07010856952" className="ml-4">
+                    <Button size="medium" variant="secondary">
+                      Reach me on phone
+                    </Button>
                   </a>
                 </div>
               </address>

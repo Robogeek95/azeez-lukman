@@ -46,7 +46,7 @@ function NewsletterSection() {
         />
 
         <ArrowButton href="#" className="pt-4" type="submit" direction="right">
-          Sign me up
+          Keep me updated
         </ArrowButton>
       </form>
     </div>
@@ -71,7 +71,6 @@ function GeneralSection() {
       <ul className="mt-4">
         <FooterLink name="privacy policy" href="/privacy" />
         <FooterLink name="terms of use" href="/terms" />
-        <FooterLink name="code of conduct" href="/coc" />
       </ul>
     </div>
   );
@@ -85,7 +84,6 @@ function SitemapSection() {
         <FooterLink name="home" href="/legal/terms" />
         <FooterLink name="blog" href="/legal/privacy" />
         <FooterLink name="projects" href="/projects" />
-        <FooterLink name="workshops" href="/workshops" />
         <FooterLink name="resume" href="/resume" />
         <FooterLink name="about" href="/about" />
         <FooterLink name="contact" href="/contact" />
