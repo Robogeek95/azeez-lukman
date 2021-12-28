@@ -8,9 +8,15 @@ import { IntroductionSection } from "../components/sections/introduction-section
 import { Spacer } from "../components/spacer";
 import { Button, ButtonLink } from "../components/button";
 import Link from "next/link";
-let articles = [{}, {}, {}]
+import { Article } from "../type";
+import { getAllFilesFrontMatter } from "../utils/mdx";
+const MAX_DISPLAY = 5;
 
-function Home() {
+type HomeProps = {
+  articles: Array<Article>;
+};
+
+function Home({ articles }: HomeProps) {
   return (
     <div>
       <HeroSection />
@@ -30,6 +36,12 @@ function Home() {
       <AboutSection />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const articles = await getAllFilesFrontMatter("blog");
+
+  return { props: { articles } };
 }
 
 export default Home;
