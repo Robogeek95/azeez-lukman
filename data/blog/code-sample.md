@@ -1,10 +1,9 @@
 ---
-title: Example markdown file
+title: Sample .md file
 date: '2016-03-08'
 tags: ['markdown', 'code', 'features']
-image: './blog/lukas-mann-ZdHSz8zQs2o.jpg'
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting examples
+summary: Example of a markdown file with code blocks and syntax highlighting
 ---
 
 A sample post with markdown.

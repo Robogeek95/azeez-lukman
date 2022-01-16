@@ -22,14 +22,13 @@ type BlogProps = {
 
 export default function Blog({ articles, pagination }: BlogProps) {
   return (
-    // <div className="h-screen mt-40 items-center flex">
     <Grid className="mt-20">
       {articles && articles.length > 0 ? (
-        articles.slice(0, 3).map((article, idx) => (
+        articles.map((article, idx) => (
           <>
             <div
               key={article.slug}
-              className={clsx("col-span-4", {
+              className={clsx("col-span-4 mb-20", {
                 "hidden lg:block": idx >= 2,
               })}
             >

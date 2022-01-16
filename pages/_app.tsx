@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import "tailwindcss/tailwind.css";
 import { Footer } from "../components/footer";
-// import { Footer } from "../components/footer";
 import { Navbar } from "../components/navbar";
 import { Spacer } from "../components/spacer";
 import { ThemeProvider, useTheme } from "../utils/theme-context";
