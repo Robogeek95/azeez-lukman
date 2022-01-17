@@ -5,8 +5,9 @@ import {
   getFileBySlug,
 } from "../../utils/mdx";
 import { MDXLayoutRenderer } from "../../components/MDXComponents";
+import fs from "fs";
 import { H2 } from "../../components/typography";
-
+import generateRss from "../../utils/generate-rss";
 const DEFAULT_LAYOUT = "PostLayout";
 
 export async function getStaticPaths() {
